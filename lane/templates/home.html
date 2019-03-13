@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load staticfiles %}
+{% block title %} lane {% endblock %}
+
+{% block body %}
+    <div class="parallax">
+    <div class="row">
+        <div class="column">
+            {% if all_images %}
+            {% for image in all_images %}
+            <img src="{{ image.image.url }}" style="width: 124px; height: 124px">
+            {% endfor %}
+            {% else %}
+            <p>no images yet</p>
+            {% endif %}
+        </div>
+    </div>
+
+    <a href="{% url 'image_upload' %}">++ add an image</a>
+    </div>
+
+
+
+{% endblock %}

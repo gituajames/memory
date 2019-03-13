@@ -1,0 +1,22 @@
+{% load static %}
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> {% block title %} memorylane {% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+</head>
+<body>
+{% block body %}
+    <div class="parallax">
+    <form>
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">upload</button>
+    </form>
+    </div>
+
+{% endblock %}
+</body>
+</html>
