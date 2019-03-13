@@ -25,7 +25,7 @@ SECRET_KEY = 'tarx*4=c^w)^92cddbi#6y8+=v&8lgn8sal%xwz*scbegsk#yp'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['gituajames.herokuapp.com']
 
 
 # Application definition
