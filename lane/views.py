@@ -23,7 +23,7 @@ def image_metadata(file):
 
 def home(request):
     all_images = image.objects.all()
-    return render(request, 'home.html', {'all_images' : all_images})
+    return render(request, 'index.html', {'all_images' : all_images})
 
 def image_form_upload(request):
     if request.method == 'POST':

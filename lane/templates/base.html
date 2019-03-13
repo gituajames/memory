@@ -8,8 +8,15 @@
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
 </head>
 <body>
+    <div class="header">
+    <ul>
+        <li><a href="{% url 'home' %}"> home </a></li>
+        <li><a href="#"> contacts </a></li>
+    </ul>
+    </div>
 {% block body %}
-    <div class="parallax">
+
+    <div class="gallery">
     <form>
         {% csrf_token %}
         {{ form.as_p }}

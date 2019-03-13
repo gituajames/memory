@@ -4,12 +4,12 @@
 {% block title %} lane {% endblock %}
 
 {% block body %}
-    <div class="parallax">
+    <div class="gallery">
     <div class="row">
         <div class="column">
             {% if all_images %}
             {% for image in all_images %}
-            <img src="{{ image.image.url }}" style="width: 124px; height: 124px">
+                    <img src="{{ image.image.url }}" alt="Cinque Terre" width="600" height="400">
             {% endfor %}
             {% else %}
             <p>no images yet</p>
