@@ -1,360 +1,635 @@
 {% load static %}
+{% load staticfiles %}
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-	<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>memory lane</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Free HTML5 Website Template by FreeHTML5.co" />
-	<meta name="keywords" content="free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
-	<meta name="author" content="FreeHTML5.co" />
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  	<!-- 
-	//////////////////////////////////////////////////////
+    <title>Memory lane</title>
+<!--
 
-	FREE HTML5 TEMPLATE 
-	DESIGNED & DEVELOPED by FreeHTML5.co
-		
-	Website: 		http://freehtml5.co/
-	Email: 			info@freehtml5.co
-	Twitter: 		http://twitter.com/fh5co
-	Facebook: 		https://www.facebook.com/fh5co
+Template 2086 Multi Color
 
-	//////////////////////////////////////////////////////
-	-->
+http://www.tooplate.com/view/2086-multi-color
 
-  	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
+-->
+    <!-- load stylesheets -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  
+    <!-- Google web font "Open Sans" -->
+    <link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css">                
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css">                                       -->
+    <!-- Bootstrap style -->
+    <link rel="stylesheet" href="{% static 'css/hero-slider-style.css' %}">
+    <!-- <link rel="stylesheet" href="css/hero-slider-style.css">                               -->
+    <!-- Hero slider style (https://codyhouse.co/gem/hero-slider/) -->
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">                                 
+    <!-- Magnific popup style (http://dimsemenov.com/plugins/magnific-popup/) -->
+    <link rel="stylesheet" href="{% static 'css/tooplate-style.css' %}">                                   
 
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<link rel="shortcut icon" href="favicon.ico">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+          <![endif]-->
+</head>
 
-	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-	
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="{% static 'css/animate.css' %}">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="{% static 'css/icomoon.css' %}">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="{% static 'css/bootstrap.css' %} ">
-	<!-- Owl Carousel -->
-	<link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
-	<link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
-	<!-- Theme style  -->
-	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <body>
+        
+        <!-- Content -->
+        <div class="cd-hero">
 
-	<!-- Modernizr JS -->
-	<script src="{% static 'js/modernizr-2.6.2.min.js' %}"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
+            <!-- Navigation -->        
+            <div class="cd-slider-nav">
+                <nav class="navbar">
+                    <div class="tm-navbar-bg">
+                        
+                        <a class="navbar-brand text-uppercase" href="#"><i class="fa fa-gears tm-brand-icon"></i>MEMORY LANE</a>
 
-	</head>
-	<body>
-	<div id="fh5co-page">
-		<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
-		<aside id="fh5co-aside" role="complementary" class="border js-fullheight">
+                        <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#tmNavbar">
+                            &#9776;
+                        </button>
+                        <div class="collapse navbar-toggleable-md text-xs-center text-uppercase tm-navbar" id="tmNavbar">
+                            <ul class="nav navbar-nav">
+                                <li class="nav-item active selected">
+                                    <a class="nav-link" href="#0" data-no="1">Album one <span class="sr-only">(current)</span></a>
+                                </li>                                
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#0" data-no="2">Album two</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#0" data-no="3">Album three</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#0" data-no="4">Our Team</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#0" data-no="5">Keep in touch</a>
+                                </li>
+                            </ul>
+                        </div>                        
+                    </div>
 
-			<h1 id="fh5co-logo"><a href="index.html"><img src="images/logo-colored.png" alt="Free HTML5 Bootstrap Website Template"></a></h1>
-			<nav id="fh5co-main-menu" role="navigation">
-				<ul>
-					<li class="fh5co-active"><a href="index.html">Home</a></li>
-					<li><a href="portfolio.html">Photos</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-			</nav>
+                </nav>
+            </div> 
 
-			<div class="fh5co-footer">
-				<p><small>&copy; 2016 Blend Free HTML5. All Rights Reserved.</span> <span>Designed by <a href="http://freehtml5.co/" target="_blank">FreeHTML5.co</a> </span> <span>Demo Images: <a href="http://pexels.com/" target="_blank">Pexels</a></span></small></p>
-				<ul>
-					<li><a href="#"><i class="icon-facebook"></i></a></li>
-					<li><a href="#"><i class="icon-twitter"></i></a></li>
-					<li><a href="#"><i class="icon-instagram"></i></a></li>
-					<li><a href="#"><i class="icon-linkedin"></i></a></li>
-				</ul>
-			</div>
+            <ul class="cd-hero-slider">
 
-		</aside>
+                <!-- Page 1 Gallery One -->
+                <li class="selected">                    
+                    <div class="cd-full-width">
+                        <div class="container-fluid js-tm-page-content" data-page-no="1" data-page-type="gallery">
+                            <div class="tm-img-gallery-container">
+                                <div class="tm-img-gallery gallery-one">
+                                <!-- Gallery One pop up connected with JS code below -->                                    
+                                    <div class="tm-img-gallery-info-container">                                    
+                                        <h2 class="tm-text-title tm-gallery-title tm-white"><span class="tm-white">Multi Color Image Gallery</span></h2>
+                                        <p class="tm-text">This responsive HTML template includes three gallery pages. Multi color is designed by Tooplate. You may use this layout for your website.
+                                        </p>
+                                    </div>
+                                    {% if all_images %}
+                                        {% for image in all_images %}
+                                    <div class="grid-item">
+                                        <figure class="effect-bubba">
+                                            <img src="{{ image.image.url }}" alt="Image" class="img-fluid tm-img">
+                                            <!-- <img src="img/tm-img-01-tn.jpg" alt="Image" class="img-fluid tm-img"> -->
+                                            <figcaption>
+                                                <h2 class="tm-figure-title">Image <span>{{ image.description }}</span></h2>
+                                                <p class="tm-figure-description">{{ image.up_loadeat }}</p>
+                                                <a href="img/tm-img-01.jpg">View more</a>
+                                            </figcaption>
 
-    
-		<div id="fh5co-main">
-			<div class="fh5co-gallery">
+                                        </figure>
+                                    </div>
+                                    {% endfor %}
+                                    {% else %}
+                                    {% endif %}
 
-				<a class="gallery-item" href="single.html">
-                    {% if all_images %}
-                    {% for image in all_images %}
-                    <img src="{{ image.image.url }}" alt="Free HTML5 Bootstrap Template by FreeHTML5.co">
-					<span class="overlay">
-						<h2>Nature</h2>
-						<span>14 Photos</span>
-					</span>
-                    {% endfor %}
-                    {% else %}
-                    <p>no images yet</p>
-                    {% endif %}
-				</a>
-				<a class="gallery-item" href="single.html">
-					<img src="images/work_2.jpg" alt="Free HTML5 Bootstrap Template by FreeHTML5.co">
-					<span class="overlay">
-						<h2>People</h2>
-						<span>7 Photos</span>
-					</span>
-				</a>
-				<a class="gallery-item" href="single.html">
-					<img src="images/work_3.jpg" alt="Free HTML5 Bootstrap Template by FreeHTML5.co">
-					<span class="overlay">
-						<h2>Sky</h2>
-						<span>22 Photos</span>
-					</span>
-				</a>
-				<a class="gallery-item" href="single.html">
-					<img src="images/work_4.jpg" alt="Free HTML5 Bootstrap Template by FreeHTML5.co">
-					<span class="overlay">
-						<h2>Building</h2>
-						<span>28 Photos</span>
-					</span>
-				</a>
-				<a class="gallery-item" href="single.html">
-					<img src="images/work_5.jpg" alt="Free HTML5 Bootstrap Template by FreeHTML5.co">
-					<span class="overlay">
-						<h2>People 2</h2>
-						<span>17 Photos</span>
-					</span>
-				</a>
-				<a class="gallery-item" href="single.html">
-					<img src="images/work_6.jpg" alt="Free HTML5 Bootstrap Template by FreeHTML5.co">
-					<span class="overlay">
-						<h2>Beach</h2>
-						<span>34 Photos</span>
-					</span>
-				</a>
-				<a class="gallery-item" href="single.html">
-					<img src="images/work_7.jpg" alt="Free HTML5 Bootstrap Template by FreeHTML5.co">
-					<span class="overlay">
-						<h2>Vegetarian Food</h2>
-						<span>10 Photos</span>
-					</span>
-				</a>
-				<a class="gallery-item" href="single.html">
-					<img src="images/work_8.jpg" alt="Free HTML5 Bootstrap Template by FreeHTML5.co">
-					<span class="overlay">
-						<h2>Travel</h2>
-						<span>19 Photos</span>
-					</span>
-				</a>
+                                </div>                                 
+                            </div>
+                        </div>                                                    
+                    </div>                    
+                </li>
 
-				<a class="gallery-item" href="single.html">
-					<img src="images/work_9.jpg" alt="Free HTML5 Bootstrap Template by FreeHTML5.co">
-					<span class="overlay">
-						<h2>Family</h2>
-						<span>42 Photos</span>
-					</span>
-				</a>
-				<a class="gallery-item" href="single.html">
-					<img src="images/work_10.jpg" alt="Free HTML5 Bootstrap Template by FreeHTML5.co">
-					<span class="overlay">
-						<h2>Food</h2>
-						<span>10 Photos</span>
-					</span>
-				</a>
-				<a class="gallery-item" href="single.html">
-					<img src="images/work_11.jpg" alt="Free HTML5 Bootstrap Template by FreeHTML5.co">
-					<span class="overlay">
-						<h2>Gadgets</h2>
-						<span>76 Photos</span>
-					</span>
-				</a>
-				<a class="gallery-item" href="single.html">
-					<img src="images/work_12.jpg" alt="Free HTML5 Bootstrap Template by FreeHTML5.co">
-					<span class="overlay">
-						<h2>Cars</h2>
-						<span>55 Photos</span>
-					</span>
-				</a>
+                <!-- Page 2 Gallery Two -->
+                <li>                    
+                    <div class="cd-full-width">
+                        <div class="container-fluid js-tm-page-content" data-page-no="2" data-page-type="gallery">
+                            <div class="tm-img-gallery-container">
+                                <div class="tm-img-gallery gallery-two">
+                                <!-- Gallery Two pop up connected with JS code below -->
+                                    
+                                    <div class="tm-img-gallery-info-container">                                    
+                                        <h2 class="tm-text-title tm-gallery-title"><span class="tm-white">Multi Two Gallery</span></h2>
+                                        <p class="tm-text"><span class="tm-white">Etiam gravida et elit vitae maximus. Pellentesque fringilla felis id feugiat consectetur. Sed quis commodo leo. Nunc aliquet auctor nunc, sit amet pharetra metus commodo ut.</span>
+                                        </p>
+                                    </div>
+                                    <div class="grid-item">
+                                        <figure class="effect-bubba">
+                                            <img src="img/tm-img-12-tn.jpg" alt="Image" class="img-fluid tm-img">
+                                            <figcaption>
+                                                <h2 class="tm-figure-title">Picture <span>One</span></h2>
+                                                <p class="tm-figure-description">Suspendisse id placerat risus. Mauris quis luctus risus.</p>
+                                                <a href="img/tm-img-12.jpg">View more</a>
+                                            </figcaption>           
+                                        </figure>
+                                    </div>
+                                    <div class="grid-item">
+                                        <figure class="effect-bubba">
+                                            <img src="img/tm-img-11-tn.jpg" alt="Image" class="img-fluid tm-img">
+                                            <figcaption>
+                                                <h2 class="tm-figure-title">Picture <span>Two</span></h2>
+                                                <p class="tm-figure-description">Maecenas purus sem, lobortis id odio in sapien.</p>
+                                                <a href="img/tm-img-11.jpg">View more</a>
+                                            </figcaption>           
+                                        </figure>
+                                    </div>
+                                    <div class="grid-item">
+                                        <figure class="effect-bubba">
+                                            <img src="img/tm-img-10-tn.jpg" alt="Image" class="img-fluid tm-img">
+                                            <figcaption>
+                                                <h2 class="tm-figure-title">Picture <span>Three</span></h2>
+                                                <p class="tm-figure-description">Suspendisse id placerat risus. Mauris quis luctus risus.</p>
+                                                <a href="img/tm-img-10.jpg">View more</a>
+                                            </figcaption>           
+                                        </figure>
+                                    </div>
+                                    <div class="grid-item">
+                                        <figure class="effect-bubba">
+                                            <img src="img/tm-img-09-tn.jpg" alt="Image" class="img-fluid tm-img">
+                                            <figcaption>
+                                                <h2 class="tm-figure-title">Picture <span>Four</span></h2>
+                                                <p class="tm-figure-description">Maecenas purus sem, lobortis id odio in sapien.</p>
+                                                <a href="img/tm-img-09.jpg">View more</a>
+                                            </figcaption>           
+                                        </figure>
+                                    </div>
+                                    <div class="grid-item">
+                                        <figure class="effect-bubba">
+                                            <img src="img/tm-img-08-tn.jpg" alt="Image" class="img-fluid tm-img">
+                                            <figcaption>
+                                                <h2 class="tm-figure-title">Picture <span>Five</span></h2>
+                                                <p class="tm-figure-description">Suspendisse id placerat risus. Mauris quis luctus risus.</p>
+                                                <a href="img/tm-img-08.jpg">View more</a>
+                                            </figcaption>           
+                                        </figure>
+                                    </div>
+                                    <div class="grid-item">
+                                        <figure class="effect-bubba">
+                                            <img src="img/tm-img-07-tn.jpg" alt="Image" class="img-fluid tm-img">
+                                            <figcaption>
+                                                <h2 class="tm-figure-title">Picture <span>Six</span></h2>
+                                                <p class="tm-figure-description">Maecenas purus sem, lobortis id odio in sapien.</p>
+                                                <a href="img/tm-img-07.jpg">View more</a>
+                                            </figcaption>           
+                                        </figure>
+                                    </div>  
+                                    <div class="grid-item">
+                                        <figure class="effect-bubba">
+                                            <img src="img/tm-img-06-tn.jpg" alt="Image" class="img-fluid tm-img">
+                                            <figcaption>
+                                                <h2 class="tm-figure-title">Picture <span>Seven</span></h2>
+                                                <p class="tm-figure-description">Maecenas purus sem, lobortis id odio in sapien.</p>
+                                                <a href="img/tm-img-06.jpg">View more</a>
+                                            </figcaption>           
+                                        </figure>
+                                    </div>  
+                                    <div class="grid-item">
+                                        <figure class="effect-bubba">
+                                            <img src="img/tm-img-05-tn.jpg" alt="Image" class="img-fluid tm-img">
+                                            <figcaption>
+                                                <h2 class="tm-figure-title">Picture <span>Eight</span></h2>
+                                                <p class="tm-figure-description">Maecenas purus sem, lobortis id odio in sapien.</p>
+                                                <a href="img/tm-img-05.jpg">View more</a>
+                                            </figcaption>           
+                                        </figure>
+                                    </div>  
+                                    <div class="grid-item">
+                                        <figure class="effect-bubba">
+                                            <img src="img/tm-img-04-tn.jpg" alt="Image" class="img-fluid tm-img">
+                                            <figcaption>
+                                                <h2 class="tm-figure-title">Picture <span>Nine</span></h2>
+                                                <p class="tm-figure-description">Maecenas purus sem, lobortis id odio in sapien.</p>
+                                                <a href="img/tm-img-04.jpg">View more</a>
+                                            </figcaption>           
+                                        </figure>
+                                    </div>  
+                                    <div class="grid-item">
+                                        <figure class="effect-bubba">
+                                            <img src="img/tm-img-03-tn.jpg" alt="Image" class="img-fluid tm-img">
+                                            <figcaption>
+                                                <h2 class="tm-figure-title">Picture <span>Ten</span></h2>
+                                                <p class="tm-figure-description">Maecenas purus sem, lobortis id odio in sapien.</p>
+                                                <a href="img/tm-img-03.jpg">View more</a>
+                                            </figcaption>           
+                                        </figure>
+                                    </div>  
+                                    <div class="grid-item">
+                                        <figure class="effect-bubba">
+                                            <img src="img/tm-img-02-tn.jpg" alt="Image" class="img-fluid tm-img">
+                                            <figcaption>
+                                                <h2 class="tm-figure-title">Picture <span>Eleven</span></h2>
+                                                <p class="tm-figure-description">Maecenas purus sem, lobortis id odio in sapien.</p>
+                                                <a href="img/tm-img-02.jpg">View more</a>
+                                            </figcaption>           
+                                        </figure>
+                                    </div>  
+                                    <div class="grid-item">
+                                        <figure class="effect-bubba">
+                                            <img src="img/tm-img-01-tn.jpg" alt="Image" class="img-fluid tm-img">
+                                            <figcaption>
+                                                <h2 class="tm-figure-title">Picture <span>Twelve</span></h2>
+                                                <p class="tm-figure-description">Maecenas purus sem, lobortis id odio in sapien.</p>
+                                                <a href="img/tm-img-01.jpg">View more</a>
+                                            </figcaption>           
+                                        </figure>
+                                    </div>  
+                                </div>                                 
+                            </div>
+                        </div>                      
+                    </div>
+                </li>
 
-				<a class="gallery-item" href="single.html">
-					<img src="images/work_13.jpg" alt="Free HTML5 Bootstrap Template by FreeHTML5.co">
-					<span class="overlay">
-						<h2>Animals</h2>
-						<span>47 Photos</span>
-					</span>
-				</a>
-				<a class="gallery-item" href="single.html">
-					<img src="images/work_14.jpg" alt="Free HTML5 Bootstrap Template by FreeHTML5.co">
-					<span class="overlay">
-						<h2>Building 2</h2>
-						<span>10 Photos</span>
-					</span>
-				</a>
-				<a class="gallery-item" href="single.html">
-					<img src="images/work_15.jpg" alt="Free HTML5 Bootstrap Template by FreeHTML5.co">
-					<span class="overlay">
-						<h2>Baloon</h2>
-						<span>17 Photos</span>
-					</span>
-				</a>
-				<a class="gallery-item" href="single.html">
-					<img src="images/work_16.jpg" alt="Free HTML5 Bootstrap Template by FreeHTML5.co">
-					<span class="overlay">
-						<h2>Animals 2</h2>
-						<span>22 Photos</span>
-					</span>
-				</a>
-			</div>
-			
-	
+                <!-- Page 3 Gallery Three -->
+                <li>
+                    <div class="cd-full-width">
+                        <div class="container-fluid js-tm-page-content" data-page-no="3" data-page-type="gallery">                        
+                            <div class="tm-img-gallery-container">
+                                <div class="tm-img-gallery gallery-three">
+                                <!-- Gallery Two pop up connected with JS code below -->
+                                    
+                                    <div class="tm-img-gallery-info-container">                                    
+                                        <h2 class="tm-text-title tm-gallery-title"><span class="tm-white">Third Multi Gallery</span></h2>
+                                        <p class="tm-text"><span class="tm-white">Donec dapibus dui sed nisi fermentum, a sollicitudin lorem fringilla. Integer nec pharetra turpis, eu sagittis ipsum. Cras dignissim lacus dolor.</span>
+                                        </p>                                     
+                                    </div>
+                                    <div class="grid-item">
+                                        <figure class="effect-bubba">
+                                            <img src="img/tm-img-01-tn.jpg" alt="Image" class="img-fluid tm-img">
+                                            <figcaption>
+                                                <h2 class="tm-figure-title">Picture <span>One</span></h2>
+                                                <p class="tm-figure-description">Suspendisse id placerat risus. Mauris quis luctus risus.</p>
+                                                <a href="img/tm-img-01.jpg">View more</a>
+                                            </figcaption>           
+                                        </figure>
+                                    </div>
+                                    <div class="grid-item">
+                                        <figure class="effect-bubba">
+                                            <img src="img/tm-img-06-tn.jpg" alt="Image" class="img-fluid tm-img">
+                                            <figcaption>
+                                                <h2 class="tm-figure-title">Picture <span>Two</span></h2>
+                                                <p class="tm-figure-description">Maecenas purus sem, lobortis id odio in sapien.</p>
+                                                <a href="img/tm-img-06.jpg">View more</a>
+                                            </figcaption>           
+                                        </figure>
+                                    </div>
+                                    <div class="grid-item">
+                                        <figure class="effect-bubba">
+                                            <img src="img/tm-img-13-tn.jpg" alt="Image" class="img-fluid tm-img">
+                                            <figcaption>
+                                                <h2 class="tm-figure-title">Picture <span>Three</span></h2>
+                                                <p class="tm-figure-description">Suspendisse id placerat risus. Mauris quis luctus risus.</p>
+                                                <a href="img/tm-img-13.jpg">View more</a>
+                                            </figcaption>           
+                                        </figure>
+                                    </div>
+                                    <div class="grid-item">
+                                        <figure class="effect-bubba">
+                                            <img src="img/tm-img-12-tn.jpg" alt="Image" class="img-fluid tm-img">
+                                            <figcaption>
+                                                <h2 class="tm-figure-title">Picture <span>Four</span></h2>
+                                                <p class="tm-figure-description">Maecenas purus sem, lobortis id odio in sapien.</p>
+                                                <a href="img/tm-img-12.jpg">View more</a>
+                                            </figcaption>           
+                                        </figure>
+                                    </div>
+                                    <div class="grid-item">
+                                        <figure class="effect-bubba">
+                                            <img src="img/tm-img-05-tn.jpg" alt="Image" class="img-fluid tm-img">
+                                            <figcaption>
+                                                <h2 class="tm-figure-title">Picture <span>Five</span></h2>
+                                                <p class="tm-figure-description">Suspendisse id placerat risus. Mauris quis luctus risus.</p>
+                                                <a href="img/tm-img-05.jpg">View more</a>
+                                            </figcaption>           
+                                        </figure>
+                                    </div>
+                                    <div class="grid-item">
+                                        <figure class="effect-bubba">
+                                            <img src="img/tm-img-09-tn.jpg" alt="Image" class="img-fluid tm-img">
+                                            <figcaption>
+                                                <h2 class="tm-figure-title">Picture <span>Six</span></h2>
+                                                <p class="tm-figure-description">Maecenas purus sem, lobortis id odio in sapien.</p>
+                                                <a href="img/tm-img-09.jpg">View more</a>
+                                            </figcaption>           
+                                        </figure>
+                                    </div>
+                                    <div class="grid-item">
+                                        <figure class="effect-bubba">
+                                            <img src="img/tm-img-11-tn.jpg" alt="Image" class="img-fluid tm-img">
+                                            <figcaption>
+                                                <h2 class="tm-figure-title">Picture <span>Seven</span></h2>
+                                                <p class="tm-figure-description">Suspendisse id placerat risus. Mauris quis luctus risus.</p>
+                                                <a href="img/tm-img-11.jpg">View more</a>
+                                            </figcaption>           
+                                        </figure>
+                                    </div>
+                                    <div class="grid-item">
+                                        <figure class="effect-bubba">
+                                            <img src="img/tm-img-14-tn.jpg" alt="Image" class="img-fluid tm-img">
+                                            <figcaption>
+                                                <h2 class="tm-figure-title">Picture <span>Eight</span></h2>
+                                                <p class="tm-figure-description">Maecenas purus sem, lobortis id odio in sapien.</p>
+                                                <a href="img/tm-img-14.jpg">View more</a>
+                                            </figcaption>           
+                                        </figure>
+                                    </div>                                                                                                 
+                                </div>                                 
+                            </div> <!-- .tm-img-gallery-container -->
+                        </div>         
+                    </div>  
+                </li>
 
-			<div class="fh5co-narrow-content">
-				<h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft">Services</h2>
-				<div class="row">
-					<div class="col-md-6">
-						<div class="fh5co-feature animate-box" data-animate-effect="fadeInLeft">
-							<div class="fh5co-icon">
-								<i class="icon-strategy"></i>
-							</div>
-							<div class="fh5co-text">
-								<h3>Strategy</h3>
-								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="fh5co-feature animate-box" data-animate-effect="fadeInLeft">
-							<div class="fh5co-icon">
-								<i class="icon-telescope"></i>
-							</div>
-							<div class="fh5co-text">
-								<h3>Explore</h3>
-								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-							</div>
-						</div>
-					</div>
+                <!-- Page 4 About -->
+                <li>
+                    <div class="cd-full-width">
+                        <div class="container-fluid js-tm-page-content tm-page-width tm-pad-b" data-page-no="4">
+                            <div class="row tm-white-box-margin-b">
+                                <div class="col-xs-12">
+                                    <div class="tm-flex">
+                                        <div class="tm-bg-white-translucent text-xs-left tm-textbox tm-textbox-padding">
+                                            <h2 class="tm-text-title">About our team</h2>
+                                            <p class="tm-text">Quisque efficitur dui id turpis cursus, quis faucibus nulla malesuada. Nulla consectetur eget quam id pulvinar. Nulla facilisi. Curabitur rhoncus lacinia tincidunt. Etiam velit dui, rutrum vel finibus ac, commodo at mauris. Donec vitae diam ac tellus consectetur interdum eu non odio.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row tm-white-box-margin-b">
+                                <div class="col-xs-12">
+                                    <div class="tm-flex">
+                                        <div class="tm-bg-white-translucent text-xs-left tm-textbox tm-2-col-textbox-2 tm-textbox-padding">
+                                            <h2 class="tm-text-title">Nulla vitae magna</h2>
+                                            <p class="tm-text">Aliquam porttitor tortor at nisi fermentum, ac porta arcu vulputate. Nunc lobortis ipsum sapien, non ultrices odio tempus varius. In posuere dolor non sagittis ultrices.</p>
+                                        </div>
+                                        <div class="tm-bg-white-translucent text-xs-left tm-textbox tm-2-col-textbox-2 tm-textbox-padding">
+                                            <h2 class="tm-text-title">Vivamus aliquam turpis</h2>
+                                            <p class="tm-text">Integer quis leo pretium, cursus nisl non, placerat magna. Sed efficitur massa id magna eleifend tristique. Duis vitae turpis dapibus, facilisis magna ut, pretium metus.</p>     
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  
 
-					<div class="col-md-6">
-						<div class="fh5co-feature animate-box" data-animate-effect="fadeInLeft">
-							<div class="fh5co-icon">
-								<i class="icon-circle-compass"></i>
-							</div>
-							<div class="fh5co-text">
-								<h3>Direction</h3>
-								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="fh5co-feature animate-box" data-animate-effect="fadeInLeft">
-							<div class="fh5co-icon">
-								<i class="icon-tools-2"></i>
-							</div>
-							<div class="fh5co-text">
-								<h3>Expertise</h3>
-								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-							</div>
-						</div>
-					</div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="tm-flex">
+                                        <div class="tm-bg-white-translucent text-xs-left tm-textbox tm-2-col-textbox-2 tm-textbox-padding">
+                                            <h2 class="tm-text-title">Curabitur at sem</h2>
+                                            <p class="tm-text">Curabitur ac bibendum augue, a convallis mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed ultrices placerat arcu.</p>
+                                        </div>
+                                        <div class="tm-bg-white-translucent text-xs-left tm-textbox tm-2-col-textbox-2 tm-textbox-padding">
+                                            <h2 class="tm-text-title">Aliquam laoreet velit</h2>
+                                            <p class="tm-text">Proin sagittis mauris dolor, vel efficitur lectus dictum nec. Sed ultrices placerat arcu, id malesuada metus cursus suscipit. Donex quis consectetur ligula. Thank you.</p>     
+                                        </div>
+                                        <div class="tm-bg-white-translucent text-xs-left tm-textbox tm-2-col-textbox-2 tm-textbox-padding">
+                                            <h2 class="tm-text-title">Suspendisse facilisis</h2>
+                                            <p class="tm-text">Sed ultrices placerat arcu, id malesuada metus cursus suscipit. Donex quis consectetur ligula. Proin accumsan eros id nisi porttitor, a facilisis quam cursus.</p>     
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                        
+                        </div>              
+                    </div> <!-- .cd-full-width -->
 
-				</div>
-			</div>
+                </li>
 
+                <!-- Page 5 Contact Us -->
+                <li>
+                    <div class="cd-full-width">
+                        <div class="container-fluid js-tm-page-content tm-page-pad" data-page-no="5">
+                            <div class="tm-contact-page">                                
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="tm-flex tm-contact-container">                                
+                                            <div class="tm-bg-white-translucent text-xs-left tm-textbox tm-2-col-textbox-2 tm-textbox-padding tm-textbox-padding-contact">
+                                                <h2 class="tm-contact-info">Say hello to us!</h2>
+                                                <p class="tm-text">Pellentesque euismod, sem nec euismod interdum, odio elit venenatis est, gravida aliquet velit velit a ex. In luctus orci et orci lobortis, quis sagittis nibh laoreet.</p>                                                
+                                                
+                                                <!-- contact form -->
+                                                <form action="index.html" method="post" class="tm-contact-form">
 
-			<div class="fh5co-testimonial" >
-				<div class="fh5co-narrow-content">
-					<div class="owl-carousel-fullwidth animate-box" data-animate-effect="fadeInLeft">
-		            <div class="item">
-		            	<figure>
-		            		<img src="images/testimonial_person2.jpg" alt="Free HTML5 Bootstrap Template">
-		            	</figure>
-		              	<p class="text-center quote">&ldquo;Design must be functional and functionality must be translated into visual aesthetics, without any reliance on gimmicks that have to be explained. &rdquo; <cite class="author">&mdash; Ferdinand A. Porsche</cite></p>
-		            </div>
-		            <div class="item">
-		            	<figure>
-		            		<img src="images/testimonial_person3.jpg" alt="Free HTML5 Bootstrap Template">
-		            	</figure>
-		              	<p class="text-center quote">&ldquo;Creativity is just connecting things. When you ask creative people how they did something, they feel a little guilty because they didn’t really do it, they just saw something. It seemed obvious to them after a while. &rdquo;<cite class="author">&mdash; Steve Jobs</cite></p>
-		            </div>
-		            <div class="item">
-		            	<figure>
-		            		<img src="images/testimonial_person4.jpg" alt="Free HTML5 Bootstrap Template">
-		            	</figure>
-		              	<p class="text-center quote">&ldquo;I think design would be better if designers were much more skeptical about its applications. If you believe in the potency of your craft, where you choose to dole it out is not something to take lightly. &rdquo;<cite class="author">&mdash; Frank Chimero</cite></p>
-		            </div>
-		          </div>
-				</div>
-			</div>
+                                                    <div class="form-group">
+                                                        <input type="text" id="contact_name" name="contact_name" class="form-control" placeholder="Name"  required/>
+                                                    </div>
+                                        
+                                                    <div class="form-group">                                                        
+                                                        <input type="email" id="contact_email" name="contact_email" class="form-control" placeholder="Email"  required/>
+                                                    </div>                                                        
+                                                    
+                                                    <div class="form-group">
+                                                        <textarea id="contact_message" name="contact_message" class="form-control" rows="5" placeholder="Your message" required></textarea>
+                                                    </div> 
 
+                                                    <button type="submit" class="pull-xs-right tm-submit-btn">Send</button>  
+                                                
+                                                </form>  
+                                            </div>
 
-			<div class="fh5co-counters" style="background-image: url(images/hero.jpg);" data-stellar-background-ratio="0.5" id="counter-animate">
-				<div class="fh5co-narrow-content animate-box">
-					<div class="row" >
-						<div class="col-md-4 text-center">
-							<span class="fh5co-counter js-counter" data-from="0" data-to="67" data-speed="5000" data-refresh-interval="50"></span>
-							<span class="fh5co-counter-label">Client</span>
-						</div>
-						<div class="col-md-4 text-center">
-							<span class="fh5co-counter js-counter" data-from="0" data-to="130" data-speed="5000" data-refresh-interval="50"></span>
-							<span class="fh5co-counter-label">Photos</span>
-						</div>
-						<div class="col-md-4 text-center">
-							<span class="fh5co-counter js-counter" data-from="0" data-to="27232" data-speed="5000" data-refresh-interval="50"></span>
-							<span class="fh5co-counter-label">Pixels</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		
+                                            <div class="tm-bg-white-translucent text-xs-left tm-textbox tm-2-col-textbox-2 tm-textbox-padding tm-textbox-padding-contact">
+                                                <h2 class="tm-contact-info">794 Old Street 12120, San Francisco, CA</h2>
+                                                <!-- google map goes here -->
+                                                <div id="google-map"></div>
+                                            </div>
 
-			<div class="fh5co-narrow-content">
-				<div class="row">
-					<div class="col-md-4 animate-box" data-animate-effect="fadeInLeft">
-						<h1 class="fh5co-heading-colored">Get in touch</h1>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-						<p class="fh5co-lead">Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-						<p><a href="#" class="btn btn-primary btn-outline">Learn More</a></p>
-					</div>
-					
-				</div>
-			</div>
+                                        </div>
 
-		</div>
-	</div>
+                                    </div>
 
-	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Carousel -->
-	<script src="js/owl.carousel.min.js"></script>
-	<!-- Stellar -->
-	<script src="js/jquery.stellar.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
-	<!-- Counters -->
-	<script src="js/jquery.countTo.js"></script>
-	
-	
-	<!-- MAIN JS -->
-	<script src="js/main.js"></script>
+                                </div>
 
-	</body>
+                            </div>    
+
+                        </div>
+                        
+                    </div> <!-- .cd-full-width -->
+                </li>
+            </ul> <!-- .cd-hero-slider -->
+            
+            <footer class="tm-footer">
+            
+                <div class="tm-social-icons-container text-xs-center">
+                    <a href="#" class="tm-social-link"><i class="fa fa-facebook"></i></a>
+                    <a href="#" class="tm-social-link"><i class="fa fa-google-plus"></i></a>
+                    <a href="#" class="tm-social-link"><i class="fa fa-twitter"></i></a>
+                    <a href="#" class="tm-social-link"><i class="fa fa-behance"></i></a>
+                    <a href="#" class="tm-social-link"><i class="fa fa-linkedin"></i></a>
+                </div>
+                
+                <p class="tm-copyright-text">Copyright &copy; 2017 Your Company 
+                
+                 - Design: Tooplate</p>
+
+            </footer>
+                    
+        </div> <!-- .cd-hero -->
+        
+
+        <!-- Preloader, https://ihatetomatoes.net/create-custom-preloading-screen/ -->
+        <div id="loader-wrapper">
+            
+            <div id="loader"></div>
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+
+        </div>
+        
+        <!-- load JS files -->
+        <!-- <script src="js/jquery-1.11.3.min.js"></script>         jQuery (https://jquery.com/download/) -->
+        <script src="{% static 'js/jquery-1.11.3.min.js' %}"></script>
+        <script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script> <!-- Tether for Bootstrap (http://stackoverflow.com/questions/34567939/how-to-fix-the-error-error-bootstrap-tooltips-require-tether-http-github-h) --> 
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>
+        <!-- <script src="js/bootstrap.min.js"></script>             Bootstrap js (v4-alpha.getbootstrap.com/) -->
+        <!-- <script src="js/hero-slider-main.js"></script>          Hero slider (https://codyhouse.co/gem/hero-slider/) -->
+        <script src="{% static 'js/hero-slider-main.js' %}"></script>
+        <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+        <!-- <script src="js/jquery.magnific-popup.min.js"></script> Magnific popup (http://dimsemenov.com/plugins/magnific-popup/) -->
+        
+        <script>
+
+            function adjustHeightOfPage(pageNo) {
+
+                var offset = 80;
+                var pageContentHeight = 0;
+
+                var pageType = $('div[data-page-no="' + pageNo + '"]').data("page-type");
+
+                if( pageType != undefined && pageType == "gallery") {
+                    pageContentHeight = $(".cd-hero-slider li:nth-of-type(" + pageNo + ") .tm-img-gallery-container").height();
+                }
+                else {
+                    pageContentHeight = $(".cd-hero-slider li:nth-of-type(" + pageNo + ") .js-tm-page-content").height() + 20;
+                }
+
+                if($(window).width() >= 992) { offset = 120; }
+                else if($(window).width() < 480) { offset = 40; }
+               
+                // Get the page height
+                var totalPageHeight = $('.cd-slider-nav').height()
+                                        + pageContentHeight + offset
+                                        + $('.tm-footer').height();
+
+                // Adjust layout based on page height and window height
+                if(totalPageHeight > $(window).height()) 
+                {
+                    $('.cd-hero-slider').addClass('small-screen');
+                    $('.cd-hero-slider li:nth-of-type(' + pageNo + ')').css("min-height", totalPageHeight + "px");
+                }
+                else 
+                {
+                    $('.cd-hero-slider').removeClass('small-screen');
+                    $('.cd-hero-slider li:nth-of-type(' + pageNo + ')').css("min-height", "100%");
+                }
+            }
+
+            /*
+                Everything is loaded including images.
+            */
+            $(window).load(function(){
+
+                adjustHeightOfPage(1); // Adjust page height
+
+                /* Gallery One pop up
+                -----------------------------------------*/
+                $('.gallery-one').magnificPopup({
+                    delegate: 'a', // child items selector, by clicking on it popup will open
+                    type: 'image',
+                    gallery:{enabled:true}                
+                });
+				
+				/* Gallery Two pop up
+                -----------------------------------------*/
+				$('.gallery-two').magnificPopup({
+                    delegate: 'a',
+                    type: 'image',
+                    gallery:{enabled:true}                
+                });
+
+                /* Gallery Three pop up
+                -----------------------------------------*/
+                $('.gallery-three').magnificPopup({
+                    delegate: 'a',
+                    type: 'image',
+                    gallery:{enabled:true}                
+                });
+
+                /* Collapse menu after click 
+                -----------------------------------------*/
+                $('#tmNavbar a').click(function(){
+                    $('#tmNavbar').collapse('hide');
+
+                    adjustHeightOfPage($(this).data("no")); // Adjust page height       
+                });
+
+                /* Browser resized 
+                -----------------------------------------*/
+                $( window ).resize(function() {
+                    var currentPageNo = $(".cd-hero-slider li.selected .js-tm-page-content").data("page-no");
+                    
+                    // wait 3 seconds
+                    setTimeout(function() {
+                        adjustHeightOfPage( currentPageNo );
+                    }, 1000);
+                    
+                });
+        
+                // Remove preloader (https://ihatetomatoes.net/create-custom-preloading-screen/)
+                $('body').addClass('loaded');
+                           
+            });
+
+            /* Google map
+            ------------------------------------------------*/
+            var map = '';
+            var center;
+
+            function initialize() {
+                var mapOptions = {
+                    zoom: 14,
+                    center: new google.maps.LatLng(37.769725, -122.462154),
+                    scrollwheel: false
+                };
+            
+                map = new google.maps.Map(document.getElementById('google-map'),  mapOptions);
+
+                google.maps.event.addDomListener(map, 'idle', function() {
+                  calculateCenter();
+                });
+            
+                google.maps.event.addDomListener(window, 'resize', function() {
+                  map.setCenter(center);
+                });
+            }
+
+            function calculateCenter() {
+                center = map.getCenter();
+            }
+
+            function loadGoogleMap(){
+                var script = document.createElement('script');
+                script.type = 'text/javascript';
+                script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&' + 'callback=initialize';
+                document.body.appendChild(script);
+            }
+        
+            // DOM is ready
+            $(function() {                
+                loadGoogleMap(); // Google Map
+            });
+
+        </script>            
+
+</body>
 </html>
-
