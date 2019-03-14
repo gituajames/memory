@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cbc54a53-2692-4899-a4f1-9c21b0f08051" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lane/admin.py" afterPath="$PROJECT_DIR$/lane/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lane/models.py" afterPath="$PROJECT_DIR$/lane/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lane/templates/index.html" afterPath="$PROJECT_DIR$/lane/templates/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lane/views.py" afterPath="$PROJECT_DIR$/lane/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -111,8 +105,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lane/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="94" column="149" lean-forward="false" selection-start-line="94" selection-start-column="149" selection-end-line="94" selection-end-column="149" />
+            <state relative-caret-position="111">
+              <caret line="319" column="39" lean-forward="true" selection-start-line="319" selection-start-column="39" selection-end-line="319" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -918,8 +912,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lane/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="94" column="149" lean-forward="false" selection-start-line="94" selection-start-column="149" selection-end-line="94" selection-end-column="149" />
+        <state relative-caret-position="111">
+          <caret line="319" column="39" lean-forward="true" selection-start-line="319" selection-start-column="39" selection-end-line="319" selection-end-column="39" />
           <folding />
         </state>
       </provider>
