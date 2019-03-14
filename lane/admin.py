@@ -5,3 +5,4 @@ from .models import image, image_desc
 
 admin.site.register(image)
 admin.site.register(image_desc)
+# admin.site.register(image_metadata)

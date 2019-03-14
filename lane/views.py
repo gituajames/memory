@@ -6,20 +6,30 @@ from PIL.ExifTags import TAGS, GPSTAGS
 from PIL import ExifTags
 
 from .forms import imageform
-from .models import image, image_desc
+from .models import image
 
 # Create your views here.
 
 def image_metadata(file):
+    ''' functioin to get image exif data and store them as a dict object '''
     meta_data = {}
     image = Image.open(file)
     mdata = image._getexif()
     if mdata:
         for(tag, value) in mdata.items():
             tagname = TAGS.get(tag, tag)
-            meta_data[tagname] = value
-    return meta_data
 
+            if tagname == 'GPSInfo':
+                gpsinfo = {}
+                for t in value:
+                    sub_decoded = GPSTAGS.get(t, t)
+                    gpsinfo[sub_decoded] = value[t]
+
+                    meta_data[tagname] = gpsinfo
+
+            else:
+                meta_data[tagname] = value
+    return meta_data
 
 def home(request):
     all_images = image.objects.all()
@@ -28,7 +38,15 @@ def home(request):
 def image_form_upload(request):
     if request.method == 'POST':
         form = imageform(request.POST, request.FILES)
+        # print('this is the clas of the post you are looking for', type(request.POST))
+        # postd = request.POST
+        # print(postd)
+        # named = postd['description']
+        # for key in postd:
+        #     print(key, ':', postd[key])
+        #
         # file = request.FILES
+        # upload_image = file['image']
         # for item in file:
         #     print (item, ':', file[item])
         #     img = file[item]
@@ -36,7 +54,8 @@ def image_form_upload(request):
         #     date_taken = all['DateTimeOriginal']
         #     print(type(date_taken))
         #     # time.strptime('2018:12:24 14:12:44', '%Y:%m:%d  %H:%M:%S')
-        #     desc = image_desc(datetime =  datetime.strptime(date_taken, '%Y:%m:%d  %H:%M:%S'))
+        #     datetime = datetime.strptime(date_taken, '%Y:%m:%d  %H:%M:%S'), name = named, image = request.FILES
+        #     desc = image_metadata(upload_image)
         #     desc.save()
         #     print('image aquired on: ', date_taken)
         #
