@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cbc54a53-2692-4899-a4f1-9c21b0f08051" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lane/templates/index.html" afterPath="$PROJECT_DIR$/lane/templates/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/memory/urls.py" afterPath="$PROJECT_DIR$/memory/urls.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -105,8 +107,28 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lane/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-391">
-              <caret line="295" column="77" lean-forward="false" selection-start-line="295" selection-start-column="77" selection-end-line="295" selection-end-column="77" />
+            <state relative-caret-position="3944">
+              <caret line="319" column="50" lean-forward="true" selection-start-line="319" selection-start-column="50" selection-end-line="319" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/memory/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="21" column="16" lean-forward="false" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/memory/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="25" column="12" lean-forward="false" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -173,7 +195,6 @@
       <list>
         <option value="$PROJECT_DIR$/lane/blend.py" />
         <option value="dbtable:/60b4b625/f3857989-7ce2-4208-972f-2514dff70511/main.lane_image" />
-        <option value="$PROJECT_DIR$/memory/urls.py" />
         <option value="$PROJECT_DIR$/lane/image.py" />
         <option value="$PROJECT_DIR$/lane/urls.py" />
         <option value="$PROJECT_DIR$/lane/templates/image_form_upload.html" />
@@ -181,7 +202,6 @@
         <option value="$PROJECT_DIR$/runtime.txt" />
         <option value="$PROJECT_DIR$/requirement.txt" />
         <option value="$PROJECT_DIR$/memory/wsgi.py" />
-        <option value="$PROJECT_DIR$/memory/settings.py" />
         <option value="$PROJECT_DIR$/lane/templates/base.html" />
         <option value="$PROJECT_DIR$/lane/templates/home.html" />
         <option value="$PROJECT_DIR$/lane/static/css/base.css" />
@@ -190,6 +210,8 @@
         <option value="$PROJECT_DIR$/lane/views.py" />
         <option value="$PROJECT_DIR$/lane/admin.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/memory/urls.py" />
+        <option value="$PROJECT_DIR$/memory/settings.py" />
         <option value="$PROJECT_DIR$/lane/templates/index.html" />
       </list>
     </option>
@@ -228,6 +250,20 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="memory" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="memory" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="memory" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="memory" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="memory" />
@@ -772,13 +808,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/memory/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f3857989-7ce2-4208-972f-2514dff70511/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -823,14 +852,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/memory/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1454">
-          <caret line="27" column="46" lean-forward="true" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -910,10 +931,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/memory/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="21" column="16" lean-forward="false" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/memory/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="12" lean-forward="false" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lane/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-391">
-          <caret line="295" column="77" lean-forward="false" selection-start-line="295" selection-start-column="77" selection-end-line="295" selection-end-column="77" />
+        <state relative-caret-position="3944">
+          <caret line="319" column="50" lean-forward="true" selection-start-line="319" selection-start-column="50" selection-end-line="319" selection-end-column="50" />
           <folding />
         </state>
       </provider>
